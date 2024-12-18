@@ -3,10 +3,10 @@ name: CI pipeline
 on:
   push:
     branches:
-      - main
+      - master
   pull_request:
     branches:
-      - main
+      - master
 
 permissions: read-all
 
@@ -71,7 +71,7 @@ jobs:
           git add -A
           if [[ `git status --porcelain` ]]; then
             git commit -m "Automatically added GitHub issue links to TODOs"
-            git push origin main
+            git push origin master
           else
             echo "No changes to commit"
           fi
