@@ -1,8 +1,9 @@
 import pytest
 import csv
 import os
-from student import Student
-from presence import Attendance
+from src.student import Student
+from src.presence import Attendance
+
 
 def cleanup(file_name):
     if os.path.exists(file_name):
