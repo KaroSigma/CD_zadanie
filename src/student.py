@@ -1,5 +1,4 @@
 import csv
-from datetime import date
 import os
 
 class Student:
@@ -57,7 +56,7 @@ class Student:
         for student in cls.list_of_students:
             obecnosc = student.obecnosci.get(data)
             if obecnosc is not None:
-                print(f"{student.first_name} {student.surname} - obecność JUZ BYLA wpisana:  {obecność}")
+                print(f"{student.first_name} {student.surname} - obecność JUZ BYLA wpisana:  {obecnosc}")
                 nowa_obecnosc = input("Czy chcesz zaktualizować obecność? (tak/nie): ")
                 if nowa_obecnosc.lower() == "tak":
                     obecnosc = input("Czy student jest obecny? Wpisz 1 gdy tak lub wpisz 0 gdy nie: ")

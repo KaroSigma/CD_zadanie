@@ -1,5 +1,4 @@
-import pytest
-import csv
+
 import os
 from src.student import Student
 from src.presence import Attendance
